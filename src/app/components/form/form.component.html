@@ -1,0 +1,20 @@
+<form class="container w-100 bg-primary rounded p-4">
+    <div class="mb-3">
+      <label for="altura" class="form-label">Altura</label>
+      <input type="number" class="form-control" [(ngModel)]="altura" id="altura" name="altura" placeholder="0m">
+    </div>
+    <div class="mb-3">
+      <label for="peso" class="form-label">Peso</label>
+      <input type="number" class="form-control" [(ngModel)]="peso" id="peso" placeholder="0kg" name="peso">
+    </div>
+    <div class="mb-3">
+      <label for="result" class="form-label">Resultado</label>
+      <input type="number" class="form-control" [(ngModel)]="resultado" id="result" name="resultado" disabled>
+    </div>
+    <div class="text-center">
+        <button type="submit" (click)="calcularIMC()" class="btn btn-primary w-50">Verificar</button>
+    </div>
+    <p class="fs-2 text-center">
+      {{resultadoIMC}}
+    </p>
+</form>
