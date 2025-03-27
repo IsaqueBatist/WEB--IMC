@@ -1,5 +1,5 @@
-<div class="d-flex justify-content-between align-items-center container h-100">
-    <img [src]="imagem ? imagem : 'happycat.jpg'" alt="imagem" width="400">
+<div class="d-flex justify-content-center gap align-items-center container h-100">
+    <img id="imagemTag" class="d-none" [src]="imagem" alt="imagem" width="400">
     <div class="w-50">
         <app-form (imagemSelecionada)="atualizarImagem($event)"></app-form>
     </div>
